@@ -25,7 +25,7 @@ signal timerlim         :  integer range 0 to  c_timer2secondlim :=0;
 signal counter_int      :  std_logic_vector (7 downto 0) := (others=>'0');
 begin
 
-timerlim<= c_timer2secondlim when switch="00" else --timerlim switclerin durumuna gore degisti
+timerlim<= c_timer2secondlim when switch="00" else --timerlim switchlerin durumuna gore degisti
            c_timer1secondlim when switch="01" else
            c_timer500mslim   when switch="10" else
            c_timer250mslim; 
